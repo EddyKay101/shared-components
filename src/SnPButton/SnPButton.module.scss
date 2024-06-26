@@ -1,0 +1,119 @@
+@import '../../styles/vars';
+.linkHolder,
+.btnHolder {
+    display: inline-block;
+    position: relative;
+}
+
+.left {
+    text-align: left;
+}
+
+.center {
+    text-align: center;
+}
+
+.right {
+    text-align: right;
+}
+
+.buttonStyle {
+    font-weight: bold;
+    width: 100%;
+    padding: 3px 20px;
+    font-size: 1.3em;
+    box-sizing: border-box;
+    transition: all 0.3s ease-in-out;
+    letter-spacing: 1px;
+    &:active {
+        transform: scale(0.3);
+    }
+    &.white {
+        background: $snp-white;
+        color: $snp-dark;
+        border: none;
+        &:hover {
+            background: $snp-dark;
+            color: $snp-white;
+        }
+    }
+    &.dark {
+        background: $snp-dark;
+        color: $snp-white;
+        border: 1px solid $snp-white;
+        &:hover {
+            background: $snp-white;
+            color: $snp-dark;
+        }
+    }
+    &.offGrey {
+        background: $snp-off-grey;
+        color: $snp-white;
+        &:hover {
+            border: 1px solid $snp-white;
+        }
+    }
+    &.bgNone {
+        background: none;
+        border: 1px solid $snp-white;
+        color: $snp-white;
+    }
+    &.bgNoneNoBorder {
+        background: none;
+        border: none;
+        color: $snp-white;
+    }
+}
+
+.linkStyle {
+    font-weight: bold;
+    text-align: center;
+    display: inline-block;
+    font-size: 1.3em;
+    padding: 1px 20px;
+    box-sizing: border-box;
+    width: 100%;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: 1px solid transparent;
+    transition: all 0.3s ease-in-out;
+    &:active {
+        transform: scale(0.3);
+    }
+    &.white {
+        background: $snp-white;
+        color: $snp-dark;
+        border: none;
+        &:hover {
+            background: $snp-dark;
+            color: $snp-white;
+        }
+    }
+    &.dark {
+        background: $snp-dark;
+        color: $snp-white;
+        border: 1px solid $snp-white;
+        &:hover {
+            background: $snp-white;
+            color: $snp-dark;
+        }
+    }
+    &.offGrey {
+        background: $snp-off-grey;
+        color: $snp-white;
+        &:hover {
+            border: 1px solid $snp-white;
+        }
+    }
+    &.bgNone {
+        background: none;
+        border: 1px solid $snp-white;
+        color: $snp-white;
+    }
+    &.bgNoneNoBorder {
+        background: none;
+        border: none;
+        color: $snp-white;
+    }
+}

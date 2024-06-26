@@ -1,0 +1,27 @@
+@use 'sass:math';
+// Principal Colours
+$snp-white: #ffffff;
+$snp-dark: #212426;
+$snp-grey: #393E40;
+// Palette colours
+$snp-off-grey: #6F7372;
+$snp-grey-six-five: #A6A6A6;
+$snp-grey-tint: #BFBFBD;
+// Additional Colors (assuming these are the ones you need)
+$snp-success: #008000;
+$snp-error: #ff0000;
+$colors: ( snp-white: $snp-white, snp-dark: $snp-dark, snp-grey: $snp-grey, snp-off-grey: $snp-off-grey, snp-grey-six-five: $snp-grey-six-five, snp-grey-tint: $snp-grey-tint, snp-success: $snp-success, snp-error: $snp-error);
+@each $name,
+$value in $colors {
+    @for $i from 20 through 100 {
+        @if $i % 2==0 {
+            $percentage: percentage(math.div($i, 100));
+            .bg-#{$name}-#{$i} {
+                background-color: rgba($value, $percentage);
+            }
+            .text-#{$name}-#{$i} {
+                color: rgba($value, $percentage);
+            }
+        }
+    }
+}

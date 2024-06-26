@@ -1,0 +1,6 @@
+{
+    "outputFolder": "dist",
+    "searchDir": "src",
+    "ignoreInitial": false,
+    "exportType": "default"
+}

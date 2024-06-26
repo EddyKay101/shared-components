@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist",
+    "module": "commonjs",
+    "target": "es5",
+    "jsx": "react",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "declaration": true,  
+    "sourceMap": true,
+    "baseUrl": "./",
+    "typeRoots": ["./node_modules/@types", "./declaration.d.ts"],
+    "paths": {
+      "@/styles/*": ["styles/*"],
+    }  
+  },
+  "include": ["./src/**/*",
+        "declaration.d.ts"]
+}
